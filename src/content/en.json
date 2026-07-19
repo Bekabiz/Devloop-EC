@@ -1,0 +1,80 @@
+{
+  "nav": { "home": "HOME", "about": "ABOUT", "projects": "PROJECTS", "contact": "CONTACT" },
+  "hero": {
+    "title": "DEVELOP EC",
+    "subtitle": "by Adamopoulos & Partners",
+    "tagline": "FROM DESIGN TO CONSTRUCTION"
+  },
+  "statement": {
+    "line": "We transform technical precision into spaces designed to endure.",
+    "intro": "Develop EC is a Greek construction and civil engineering practice. Since 2018 we have carried projects through every stage — from the first structural study to the final handover — for homes, hotels and industry across Greece.",
+    "stats": [
+      { "value": 50, "suffix": "+", "label": "Projects" },
+      { "value": 2018, "prefix": "Since ", "label": "Founded" },
+      { "value": 6, "suffix": "", "label": "Regions" }
+    ]
+  },
+  "services": {
+    "kicker": "What we do",
+    "title": "Complete engineering, end to end.",
+    "items": [
+      {
+        "num": "01",
+        "name": "Design & Study",
+        "desc": "Architectural and structural studies for residential, commercial, tourism, and industrial projects. Complete engineering solutions from concept to detailed plans."
+      },
+      {
+        "num": "02",
+        "name": "Licensing & Coordination",
+        "desc": "Full permit management. Feasibility studies and integration into EU and national development funding programs."
+      },
+      {
+        "num": "03",
+        "name": "Construction & Supervision",
+        "desc": "Reinforced concrete and steel construction, renovation, and structural reinforcement. End-to-end project management from foundations to handover."
+      }
+    ]
+  },
+  "cinematic": {
+    "kicker": "In the field",
+    "caption": "Scroll — a journey through our built work"
+  },
+  "projectsSection": {
+    "kicker": "Selected work",
+    "title": "Projects"
+  },
+  "about": {
+    "kicker": "The practice",
+    "title": "Engineering-led, since 2018.",
+    "body": "Develop EC was founded by Georgios Adamopoulos, MSc Structural Civil Engineer from the National Technical University of Athens, with a Master's in Local Development from the University of Piraeus. Since 2018, through the engineering office adamopoulos+partners and the construction company Develop EC, we deliver complete project solutions — from site acquisition and design, through financing and management, to construction and handover. With projects across Ilia, Attica, the Cyclades, Thessaly, Messinia, and the Ionian Islands, we have designed and built residential complexes, tourist facilities, commercial buildings, and public infrastructure. Our goal: creating projects of real value for our clients and local communities.",
+    "facts": [
+      { "label": "Founder", "value": "Georgios Adamopoulos, MSc NTUA" },
+      { "label": "Established", "value": "2018 — Athens & Pyrgos, Ilia" },
+      { "label": "Regions", "value": "Ilia · Attica · Cyclades · Thessaly · Messinia · Ionian" },
+      { "label": "Scope", "value": "Design · Licensing · Funding · Construction" }
+    ]
+  },
+  "contact": {
+    "kicker": "Contact",
+    "headline": "Let's talk about your next project.",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "submit": "Get in Touch",
+    "sent": "Thank you — we will be in touch shortly.",
+    "info": {
+      "email": "adamopoulos.gm@gmail.com",
+      "phone": "2621 302634",
+      "hours": "9:00 – 20:00",
+      "location": "Athens & Pyrgos, Peloponnese",
+      "instagram": "@adamopoulos_ge",
+      "instagramUrl": "https://instagram.com/adamopoulos_ge"
+    }
+  },
+  "footer": {
+    "copyright": "© 2026 Develop EC. All rights reserved.",
+    "credit": "Website by Evriel Systems",
+    "creditUrl": "https://evrielsystems.com",
+    "privacy": "Privacy Policy"
+  }
+}
