@@ -1,16 +1,17 @@
-import en from "../content/en.json"
+import { useLang } from "../lib/i18n"
 
 export default function Footer() {
+  const { t } = useLang()
   return (
     <footer className="footer">
-      <img src="/media/logo/logo-black.svg" alt="Develop EC" height={22} />
+      <img src="/media/logo/logo-black.png" alt="Develop EC" height={20} />
       <div className="footer__meta">
-        <span>{en.footer.copyright}</span>
+        <span>{t.footer.copyright}</span>
         <a href="#" aria-label="Privacy Policy">
-          {en.footer.privacy}
+          {t.footer.privacy}
         </a>
-        <a href={en.footer.creditUrl} target="_blank" rel="noreferrer">
-          {en.footer.credit}
+        <a className="footer__credit" href={t.footer.creditUrl} target="_blank" rel="noreferrer">
+          {t.footer.credit}
         </a>
       </div>
     </footer>

@@ -1,6 +1,6 @@
 import { Suspense, lazy, useEffect, useLayoutEffect, useRef, useState } from "react"
 import { gsap, ScrollTrigger, prefersReducedMotion } from "../../lib/motion"
-import en from "../../content/en.json"
+import { useLang } from "../../lib/i18n"
 
 const CinematicScene = lazy(() => import("./CinematicScene"))
 
@@ -22,6 +22,7 @@ export default function Cinematic() {
   const [near, setNear] = useState(false)
   const sectionRef = useRef<HTMLElement>(null)
   const progress = useRef(0)
+  const { t } = useLang()
 
   useEffect(() => {
     const wide = window.matchMedia("(min-width: 769px)").matches
@@ -80,14 +81,14 @@ export default function Cinematic() {
     return (
       <section className="cine-fallback section">
         <span className="kicker" data-reveal>
-          {en.cinematic.kicker}
+          {t.cinematic.kicker}
         </span>
         <div className="cine-fallback__grid">
           {imgs.map((n) => (
             <div key={n} data-clip>
               <img
                 src={`/media/cinematic/${String(n).padStart(2, "0")}.webp`}
-                alt="Develop EC — built work"
+                alt="Develop EC built work"
                 loading="lazy"
               />
             </div>
@@ -105,7 +106,7 @@ export default function Cinematic() {
             <CinematicScene progress={progress} />
           </Suspense>
         )}
-        <div className="cinematic__caption">{en.cinematic.caption}</div>
+        <div className="cinematic__caption">{t.cinematic.caption}</div>
       </div>
     </section>
   )

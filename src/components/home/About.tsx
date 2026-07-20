@@ -1,21 +1,22 @@
-import en from "../../content/en.json"
+import { useLang } from "../../lib/i18n"
 
 export default function About() {
+  const { t } = useLang()
   return (
     <section className="about section" id="about">
       <div className="about__grid">
         <div>
           <span className="kicker" data-reveal>
-            {en.about.kicker}
+            {t.about.kicker}
           </span>
           <h2 className="services__title" style={{ marginTop: 22 }} data-reveal>
-            {en.about.title}
+            {t.about.title}
           </h2>
           <p className="about__body" data-reveal>
-            {en.about.body}
+            {t.about.body}
           </p>
           <div className="about__facts" data-stagger>
-            {en.about.facts.map((f) => (
+            {t.about.facts.map((f) => (
               <div className="about__fact" key={f.label}>
                 <strong>{f.label}</strong>
                 <span>{f.value}</span>
