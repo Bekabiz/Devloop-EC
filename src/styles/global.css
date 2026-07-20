@@ -393,6 +393,7 @@ button {
 }
 .statement__text .word {
   display: inline-block;
+  margin-right: 0.25em;
 }
 .statement__intro {
   max-width: 620px;
