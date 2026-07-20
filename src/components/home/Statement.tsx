@@ -1,9 +1,10 @@
 import { useLayoutEffect, useRef } from "react"
 import { gsap, prefersReducedMotion } from "../../lib/motion"
-import en from "../../content/en.json"
+import { useLang } from "../../lib/i18n"
 
 export default function Statement() {
   const ref = useRef<HTMLElement>(null)
+  const { t } = useLang()
 
   useLayoutEffect(() => {
     if (prefersReducedMotion() || !ref.current) return
@@ -41,32 +42,29 @@ export default function Statement() {
   return (
     <section className="statement section" ref={ref}>
       <h2 className="statement__text">
-        {en.statement.line.split(" ").map((w, i) => (
+        {t.statement.line.split(" ").map((w, i) => (
           <span key={i} className="word">
             {w}
-            {" "}
+            {" "}
           </span>
         ))}
       </h2>
       <p className="statement__intro" data-reveal>
-        {en.statement.intro}
+        {t.statement.intro}
       </p>
       <div className="statement__stats" data-stagger>
-        {en.statement.stats.map((s) => (
-          <div className="stat" key={s.label}>
-            <div
-              className="stat__num"
-              data-value={s.value}
-              data-prefix={"prefix" in s ? (s as { prefix?: string }).prefix ?? "" : ""}
-              data-suffix={"suffix" in s ? (s as { suffix?: string }).suffix ?? "" : ""}
-            >
-              {("prefix" in s ? (s as { prefix?: string }).prefix ?? "" : "") +
-                s.value +
-                ("suffix" in s ? (s as { suffix?: string }).suffix ?? "" : "")}
+        {t.statement.stats.map((s) => {
+          const prefix = "prefix" in s ? ((s as { prefix?: string }).prefix ?? "") : ""
+          const suffix = "suffix" in s ? ((s as { suffix?: string }).suffix ?? "") : ""
+          return (
+            <div className="stat" key={s.label}>
+              <div className="stat__num" data-value={s.value} data-prefix={prefix} data-suffix={suffix}>
+                {prefix + s.value + suffix}
+              </div>
+              <div className="stat__label">{s.label}</div>
             </div>
-            <div className="stat__label">{s.label}</div>
-          </div>
-        ))}
+          )
+        })}
       </div>
     </section>
   )

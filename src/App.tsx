@@ -1,6 +1,7 @@
 import { Suspense, lazy, useEffect, useLayoutEffect, useRef, useState } from "react"
 import { Route, Routes, useLocation } from "react-router-dom"
 import { gsap, ScrollTrigger, initLenis, scrollToTop, prefersReducedMotion } from "./lib/motion"
+import { I18nProvider } from "./lib/i18n"
 import Loader from "./components/Loader"
 import Nav from "./components/Nav"
 import Footer from "./components/Footer"
@@ -33,7 +34,7 @@ export default function App() {
   }, [location.pathname])
 
   return (
-    <>
+    <I18nProvider>
       {!booted && <Loader onDone={() => setBooted(true)} />}
       <Nav />
       <div ref={mainRef}>
@@ -46,6 +47,6 @@ export default function App() {
         </Suspense>
         <Footer />
       </div>
-    </>
+    </I18nProvider>
   )
 }
