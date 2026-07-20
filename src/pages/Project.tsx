@@ -2,20 +2,23 @@ import { useLayoutEffect, useRef } from "react"
 import { Link, Navigate, useParams } from "react-router-dom"
 import { applyReveals, ScrollTrigger } from "../lib/motion"
 import { getProject, nextProject, projectMedia, Project } from "../content/projects"
+import { useLang } from "../lib/i18n"
 
 function Photo({ p, n, wide = false }: { p: Project; n: number; wide?: boolean }) {
+  const { lang } = useLang()
   return (
     <div className="story__media" data-clip data-parallax style={wide ? { aspectRatio: "21 / 10" } : undefined}>
       <picture>
         <source media="(max-width: 768px)" srcSet={projectMedia.photo(p, n, true)} />
-        <img src={projectMedia.photo(p, n)} alt={`${p.name} — photograph ${n}`} loading="lazy" />
+        <img src={projectMedia.photo(p, n)} alt={`${p.i18n[lang].name}, ${n}`} loading="lazy" />
       </picture>
     </div>
   )
 }
 
 function SplitBlock({ p, n, flip }: { p: Project; n: number; flip?: boolean }) {
-  const caption = p.captions[n]
+  const { lang } = useLang()
+  const caption = p.i18n[lang].captions[n]
   return (
     <div className="story__block">
       <div className={flip ? "story__split story__split--flip" : "story__split"}>
@@ -37,6 +40,7 @@ export default function ProjectPage() {
   const { slug } = useParams()
   const project = slug ? getProject(slug) : undefined
   const ref = useRef<HTMLDivElement>(null)
+  const { lang, t } = useLang()
 
   useLayoutEffect(() => {
     if (!ref.current || !project) return
@@ -49,6 +53,8 @@ export default function ProjectPage() {
 
   if (!project) return <Navigate to="/" replace />
   const next = nextProject(project.slug)
+  const px = project.i18n[lang]
+  const nx = next.i18n[lang]
 
   // alternating editorial pattern: 1 full · 2 split · 3 split-flip · 4 wide · 5 split · 6 full …
   const blocks: JSX.Element[] = []
@@ -79,43 +85,43 @@ export default function ProjectPage() {
           playsInline
         />
         <div className="phero__shade" />
-        <h1 className="phero__name">{project.name}</h1>
+        <h1 className="phero__name">{px.name}</h1>
       </section>
 
       <section className="pident">
         <div className="pident__grid">
           <div>
             <span className="kicker" data-reveal>
-              {project.type} — {project.location}
+              {px.type} · {px.location}
             </span>
             <h2 className="pident__name" style={{ marginTop: 20 }} data-reveal>
-              {project.name}
+              {px.name}
             </h2>
             <div className="pident__meta" data-stagger>
               <div>
-                <strong>Location</strong>
-                <span>{project.location}</span>
+                <strong>{t.project.location}</strong>
+                <span>{px.location}</span>
               </div>
               <div>
-                <strong>Type</strong>
-                <span>{project.type}</span>
+                <strong>{t.project.type}</strong>
+                <span>{px.type}</span>
               </div>
               <div>
-                <strong>Status</strong>
-                <span>{project.status}</span>
+                <strong>{t.project.status}</strong>
+                <span>{px.status}</span>
               </div>
               <div>
-                <strong>Year</strong>
+                <strong>{t.project.year}</strong>
                 <span>{project.year}</span>
               </div>
               <div style={{ gridColumn: "1 / -1" }}>
-                <strong>Services</strong>
-                <span>{project.services}</span>
+                <strong>{t.project.services}</strong>
+                <span>{px.services}</span>
               </div>
             </div>
           </div>
           <p className="pident__desc" data-reveal>
-            {project.description}
+            {px.description}
           </p>
         </div>
       </section>
@@ -123,10 +129,10 @@ export default function ProjectPage() {
       <div className="story">{blocks}</div>
 
       <Link to={`/projects/${next.slug}`} className="pnext">
-        <span className="pnext__label">Next project</span>
-        <div className="pnext__name">{next.name}</div>
+        <span className="pnext__label">{t.project.next}</span>
+        <div className="pnext__name">{nx.name}</div>
         <div className="pnext__media" data-clip>
-          <img src={projectMedia.thumb(next)} alt={next.name} loading="lazy" width={900} height={600} />
+          <img src={projectMedia.thumb(next)} alt={nx.name} loading="lazy" width={900} height={600} />
         </div>
       </Link>
     </div>
