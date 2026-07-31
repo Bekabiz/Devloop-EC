@@ -1,7 +1,7 @@
 import { Suspense, lazy, useEffect, useLayoutEffect, useRef, useState } from "react"
 import { gsap, ScrollTrigger, prefersReducedMotion } from "../../lib/motion"
 import { useLang } from "../../lib/i18n"
-import { CINEMATIC_ORDER, cinematicUrl } from "./cinematicOrder"
+import { CINEMATIC_ORDER, cinematicHdUrl, cinematicUrl } from "./cinematicOrder"
 
 const CinematicScene = lazy(() => import("./CinematicScene"))
 
@@ -47,7 +47,7 @@ function CineMobileSequence({ caption }: { caption: string }) {
           const o = Math.max(0, 1 - d)
           el.style.opacity = String(o)
           const img = el.firstElementChild as HTMLElement | null
-          if (img) img.style.transform = `scale(${1.1 - Math.min(d, 1) * 0 - o * 0.06})`
+          if (img) img.style.transform = `scale(${1.045 - o * 0.045})`
         })
       },
     })
@@ -73,7 +73,7 @@ function CineMobileSequence({ caption }: { caption: string }) {
       <div className="cine-seq__stage">
         {MOBILE_SEQ.map((f, i) => (
           <div className="cine-seq__frame" key={f}>
-            <img src={cinematicUrl(f)} alt="Develop EC built work" decoding="async" />
+            <img src={cinematicHdUrl(f)} alt="Develop EC built work" decoding="async" />
           </div>
         ))}
         <div className="cinematic__caption cine-seq__caption">{caption}</div>

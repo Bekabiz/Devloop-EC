@@ -1,15 +1,45 @@
 import { FormEvent, useState } from "react"
 import { useLang } from "../../lib/i18n"
 
+/**
+ * Form submissions are delivered to the practice's private inbox via
+ * FormSubmit; the address shown to visitors is the public one from the
+ * content files. Reply-to is set to the visitor's own email.
+ */
+const DELIVERY_ENDPOINT = "https://formsubmit.co/ajax/adamopoulos.gm@gmail.com"
+
+type FormState = "idle" | "sending" | "sent" | "error"
+
 export default function Contact() {
-  const [sent, setSent] = useState(false)
+  const [state, setState] = useState<FormState>("idle")
   const { t } = useLang()
   const info = t.contact.info
   const labels = t.contact.labels
 
-  const submit = (e: FormEvent) => {
+  const submit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    setSent(true)
+    if (state === "sending") return
+    const form = e.currentTarget
+    const data = new FormData(form)
+    setState("sending")
+    try {
+      const res = await fetch(DELIVERY_ENDPOINT, {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({
+          name: data.get("name"),
+          email: data.get("email"),
+          message: data.get("message"),
+          _replyto: data.get("email"),
+          _subject: "Develop EC — website enquiry",
+          _template: "table",
+        }),
+      })
+      if (!res.ok) throw new Error(String(res.status))
+      setState("sent")
+    } catch {
+      setState("error")
+    }
   }
 
   return (
@@ -22,7 +52,7 @@ export default function Contact() {
           <h2 className="contact__headline" style={{ marginTop: 22 }} data-reveal>
             {t.contact.headline}
           </h2>
-          {sent ? (
+          {state === "sent" ? (
             <p className="about__body" style={{ marginTop: 54 }}>
               {t.contact.sent}
             </p>
@@ -40,9 +70,14 @@ export default function Contact() {
                 <label htmlFor="c-msg">{t.contact.message}</label>
                 <textarea id="c-msg" name="message" rows={4} required />
               </div>
-              <button className="contact__submit" type="submit">
-                {t.contact.submit}
+              <button className="contact__submit" type="submit" disabled={state === "sending"}>
+                {state === "sending" ? t.contact.sending : t.contact.submit}
               </button>
+              {state === "error" && (
+                <p className="contact__error" role="alert">
+                  {t.contact.error}
+                </p>
+              )}
             </form>
           )}
         </div>

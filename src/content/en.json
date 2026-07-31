@@ -57,7 +57,7 @@
   },
   "team": {
     "kicker": "The team",
-    "title": "The people behind the work.",
+    "title": "TEAM",
     "founderName": "Georgios Adamopoulos",
     "founderRole": "Founder · Lead Structural Engineer",
     "credentials": [
@@ -81,7 +81,9 @@
     "email": "Email",
     "message": "Message",
     "submit": "Get in Touch",
+    "sending": "Sending…",
     "sent": "Thank you. We will be in touch shortly.",
+    "error": "Something went wrong. Please email us directly at adamopoulosandpartners@gmail.com.",
     "labels": {
       "email": "Email",
       "phone": "Phone",
@@ -91,7 +93,7 @@
       "instagram": "Instagram"
     },
     "info": {
-      "email": "adamopoulos.gm@gmail.com",
+      "email": "adamopoulosandpartners@gmail.com",
       "phone": "2621 302634",
       "hours": "9:00 - 20:00",
       "athens": "Leof. Alexandrou Papanastasiou 5, Agios Dimitrios, Attiki 17343",

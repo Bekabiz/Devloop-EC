@@ -766,6 +766,14 @@ button {
   background: var(--ink);
   color: #fff;
 }
+.contact__submit:disabled {
+  opacity: 0.5;
+  cursor: wait;
+}
+.contact__error {
+  font-size: 13px;
+  color: var(--ink-2);
+}
 .contact__info {
   display: grid;
   gap: 30px;
@@ -990,22 +998,29 @@ button {
   position: relative;
   height: 100svh;
   overflow: hidden;
+  background: var(--white);
 }
+/* full composition visible: contain-fit on a clean white stage, never cropped */
 .cine-seq__frame {
   position: absolute;
   inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 84px var(--pad) 96px;
   will-change: opacity;
 }
 .cine-seq__frame img {
+  max-width: 100%;
+  max-height: 100%;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  object-fit: contain;
   will-change: transform;
 }
 .cine-seq__caption {
   z-index: 2;
-  color: #fff;
-  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.4);
+  color: var(--ink-2);
 }
 
 /* photo story */

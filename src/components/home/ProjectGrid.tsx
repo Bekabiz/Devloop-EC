@@ -1,6 +1,19 @@
 import { Link } from "react-router-dom"
-import { projects, projectMedia } from "../../content/projects"
+import { Project, projects, projectMedia } from "../../content/projects"
 import { useLang } from "../../lib/i18n"
+
+const warmed = new Set<string>()
+
+/** Prefetch the project route chunk and hero assets before the tap lands. */
+function warm(p: Project) {
+  if (warmed.has(p.slug)) return
+  warmed.add(p.slug)
+  import("../../pages/Project")
+  ;[projectMedia.poster(p), projectMedia.photo(p, 1)].forEach((src) => {
+    const img = new Image()
+    img.src = src
+  })
+}
 
 export default function ProjectGrid() {
   const { lang, t } = useLang()
@@ -18,7 +31,14 @@ export default function ProjectGrid() {
         {projects.map((p) => {
           const px = p.i18n[lang]
           return (
-            <Link to={`/projects/${p.slug}`} className="card" key={p.slug}>
+            <Link
+              to={`/projects/${p.slug}`}
+              className="card"
+              key={p.slug}
+              onMouseEnter={() => warm(p)}
+              onTouchStart={() => warm(p)}
+              onFocus={() => warm(p)}
+            >
               <div className="card__media">
                 <img
                   src={projectMedia.thumb(p)}

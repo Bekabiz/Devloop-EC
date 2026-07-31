@@ -16,10 +16,7 @@ export default function Team() {
           </div>
         </div>
         <div className="team__text">
-          <span className="kicker" data-reveal>
-            {t.team.kicker}
-          </span>
-          <h2 className="services__title" style={{ marginTop: 22 }} data-reveal>
+          <h2 className="services__title" data-reveal>
             {t.team.title}
           </h2>
           <ul className="team__credentials" data-stagger>

@@ -12,3 +12,7 @@ export const CINEMATIC_ORDER = [
 
 export const cinematicUrl = (fileNum: number) =>
   `/media/cinematic/${String(fileNum).padStart(2, "0")}.webp`
+
+/** 1600px encodes for the mobile sequence, sharp at devicePixelRatio 3. */
+export const cinematicHdUrl = (fileNum: number) =>
+  `/media/cinematic/hd/${String(fileNum).padStart(2, "0")}.webp`

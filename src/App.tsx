@@ -16,6 +16,11 @@ export default function App() {
 
   useEffect(() => {
     initLenis()
+    // warm the project-page chunk so first tap on a card never waits for JS
+    const warm = window.setTimeout(() => {
+      import("./pages/Project")
+    }, 1500)
+    return () => window.clearTimeout(warm)
   }, [])
 
   // page transition: fade + rise on every route change, reset scroll
@@ -25,8 +30,8 @@ export default function App() {
     if (prefersReducedMotion() || !mainRef.current) return
     const tween = gsap.fromTo(
       mainRef.current,
-      { autoAlpha: 0, y: 24 },
-      { autoAlpha: 1, y: 0, duration: 0.7, ease: "power2.out", clearProps: "all" }
+      { autoAlpha: 0, y: 12 },
+      { autoAlpha: 1, y: 0, duration: 0.35, ease: "power2.out", clearProps: "all" }
     )
     return () => {
       tween.kill()
