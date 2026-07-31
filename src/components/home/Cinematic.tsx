@@ -1,6 +1,7 @@
 import { Suspense, lazy, useEffect, useLayoutEffect, useRef, useState } from "react"
 import { gsap, ScrollTrigger, prefersReducedMotion } from "../../lib/motion"
 import { useLang } from "../../lib/i18n"
+import { CINEMATIC_ORDER, cinematicUrl } from "./cinematicOrder"
 
 const CinematicScene = lazy(() => import("./CinematicScene"))
 
@@ -13,12 +14,81 @@ function supportsWebGL() {
   }
 }
 
+/** Curated subset for the mobile sequential gallery: big work first, construction last. */
+const MOBILE_SEQ = [0, 2, 4, 5, 6, 8, 11, 13, 18, 20, 22, 26].map(
+  (i) => CINEMATIC_ORDER[i]
+)
+
 /**
- * Scroll-driven 3D flight through 30 photographs.
- * Falls back to a simple reveal gallery on mobile / without WebGL / reduced motion.
+ * Mobile: a purpose-built scroll-driven full-bleed sequence.
+ * One photo at a time, crossfading with a slow settle of scale as you
+ * scroll, same hierarchy order as the desktop fly-through.
+ */
+function CineMobileSequence({ caption }: { caption: string }) {
+  const ref = useRef<HTMLElement>(null)
+
+  useLayoutEffect(() => {
+    if (!ref.current || prefersReducedMotion()) return
+    const imgs = Array.from(ref.current.querySelectorAll<HTMLElement>(".cine-seq__frame"))
+    const n = imgs.length
+    imgs.forEach((el, i) => {
+      el.style.opacity = i === 0 ? "1" : "0"
+    })
+    const st = ScrollTrigger.create({
+      trigger: ref.current,
+      start: "top top",
+      end: "bottom bottom",
+      pin: ref.current.querySelector<HTMLElement>(".cine-seq__stage"),
+      pinSpacing: false,
+      onUpdate: (self) => {
+        const pos = self.progress * (n - 1)
+        imgs.forEach((el, i) => {
+          const d = Math.abs(pos - i)
+          const o = Math.max(0, 1 - d)
+          el.style.opacity = String(o)
+          const img = el.firstElementChild as HTMLElement | null
+          if (img) img.style.transform = `scale(${1.1 - Math.min(d, 1) * 0 - o * 0.06})`
+        })
+      },
+    })
+    return () => st.kill()
+  }, [])
+
+  if (prefersReducedMotion()) {
+    return (
+      <section className="cine-fallback section">
+        <div className="cine-fallback__grid">
+          {MOBILE_SEQ.slice(0, 6).map((f) => (
+            <div key={f}>
+              <img src={cinematicUrl(f)} alt="Develop EC built work" loading="lazy" />
+            </div>
+          ))}
+        </div>
+      </section>
+    )
+  }
+
+  return (
+    <section className="cine-seq" ref={ref} style={{ height: `${MOBILE_SEQ.length * 64}vh` }}>
+      <div className="cine-seq__stage">
+        {MOBILE_SEQ.map((f, i) => (
+          <div className="cine-seq__frame" key={f}>
+            <img src={cinematicUrl(f)} alt="Develop EC built work" decoding="async" />
+          </div>
+        ))}
+        <div className="cinematic__caption cine-seq__caption">{caption}</div>
+      </div>
+    </section>
+  )
+}
+
+/**
+ * Scroll-driven 3D flight through 30 photographs, ordered by hierarchy:
+ * biggest projects first, construction reality last. Falls back to the
+ * sequential gallery on mobile / without WebGL.
  */
 export default function Cinematic() {
-  const [mode, setMode] = useState<"3d" | "fallback">("fallback")
+  const [mode, setMode] = useState<"3d" | "mobile">("mobile")
   const [near, setNear] = useState(false)
   const sectionRef = useRef<HTMLElement>(null)
   const progress = useRef(0)
@@ -76,27 +146,7 @@ export default function Cinematic() {
     }
   }, [mode, near])
 
-  if (mode === "fallback") {
-    const imgs = [1, 4, 7, 11, 15, 19, 23, 27]
-    return (
-      <section className="cine-fallback section">
-        <span className="kicker" data-reveal>
-          {t.cinematic.kicker}
-        </span>
-        <div className="cine-fallback__grid">
-          {imgs.map((n) => (
-            <div key={n} data-clip>
-              <img
-                src={`/media/cinematic/${String(n).padStart(2, "0")}.webp`}
-                alt="Develop EC built work"
-                loading="lazy"
-              />
-            </div>
-          ))}
-        </div>
-      </section>
-    )
-  }
+  if (mode === "mobile") return <CineMobileSequence caption={t.cinematic.caption} />
 
   return (
     <section className="cinematic" ref={sectionRef}>

@@ -2,8 +2,10 @@ import { Canvas, useFrame, useLoader } from "@react-three/fiber"
 import { Suspense, useMemo, useRef } from "react"
 import * as THREE from "three"
 
-const COUNT = 30
-const urls = Array.from({ length: COUNT }, (_, i) => `/media/cinematic/${String(i + 1).padStart(2, "0")}.webp`)
+import { CINEMATIC_ORDER, cinematicUrl } from "./cinematicOrder"
+
+const COUNT = CINEMATIC_ORDER.length
+const urls = CINEMATIC_ORDER.map(cinematicUrl)
 
 /** Deterministic pseudo-random scatter so the flight path is stable. */
 function layout(i: number) {
@@ -13,10 +15,12 @@ function layout(i: number) {
   }
   const z = -i * 4.6
   const side = i % 2 === 0 ? -1 : 1
-  const x = side * (1.9 + rnd(i) * 2.6)
-  const y = (rnd(i + 40) - 0.5) * 2.6
-  const rot = (rnd(i + 80) - 0.5) * 0.16
-  const scale = 2.6 + rnd(i + 120) * 1.3
+  // calmer, more composed drift: gentle alternating offsets, larger planes
+  // up front so the sequence opens with the biggest projects filling the view
+  const x = side * (1.7 + rnd(i) * 1.6)
+  const y = (rnd(i + 40) - 0.5) * 1.7
+  const rot = side * (0.04 + rnd(i + 80) * 0.05)
+  const scale = (i < 6 ? 3.2 : 2.7) + rnd(i + 120) * 0.9
   return { x, y, z, rot, scale }
 }
 
@@ -31,8 +35,8 @@ function Photos({ progress }: { progress: React.MutableRefObject<number> }) {
     const target = 6 - progress.current * (total + 4)
     camZ.current += (target - camZ.current) * 0.08
     camera.position.z = camZ.current
-    camera.position.x = Math.sin(progress.current * Math.PI * 2) * 0.35
-    camera.position.y = Math.sin(progress.current * Math.PI * 3) * 0.2
+    camera.position.x = Math.sin(progress.current * Math.PI * 2) * 0.22
+    camera.position.y = Math.sin(progress.current * Math.PI * 3) * 0.12
     if (group.current) {
       group.current.children.forEach((child) => {
         const mesh = child as THREE.Mesh

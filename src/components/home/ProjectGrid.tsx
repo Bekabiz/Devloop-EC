@@ -20,15 +20,25 @@ export default function ProjectGrid() {
           return (
             <Link to={`/projects/${p.slug}`} className="card" key={p.slug}>
               <div className="card__media">
-                <img src={projectMedia.thumb(p)} alt={px.name} loading="lazy" width={900} height={600} />
+                <img
+                  src={projectMedia.thumb(p)}
+                  alt={px.name}
+                  loading="lazy"
+                  width={1200}
+                  height={800}
+                />
               </div>
-              <div className="card__veil">
-                <span className="card__name">{px.name}</span>
-              </div>
-              <div className="card__meta">
-                <strong>{px.name}</strong>
-                <span>
-                  {px.location} · {px.type}
+              <div className="card__caption">
+                <div>
+                  <strong className="card__name">{px.name}</strong>
+                  <span className="card__meta">
+                    {p.year} - {px.location}
+                  </span>
+                </div>
+                <span className="card__arrow" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.4" />
+                  </svg>
                 </span>
               </div>
             </Link>

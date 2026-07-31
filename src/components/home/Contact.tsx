@@ -60,8 +60,12 @@ export default function Contact() {
             <span>{info.hours}</span>
           </div>
           <div className="info__item">
-            <strong>{labels.location}</strong>
-            <span>{info.location}</span>
+            <strong>{labels.athens}</strong>
+            <span>{info.athens}</span>
+          </div>
+          <div className="info__item">
+            <strong>{labels.pyrgos}</strong>
+            <span>{info.pyrgos}</span>
           </div>
           <div className="info__item">
             <strong>{labels.instagram}</strong>

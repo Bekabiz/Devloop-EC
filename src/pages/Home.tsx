@@ -7,6 +7,7 @@ import Services from "../components/home/Services"
 import Cinematic from "../components/home/Cinematic"
 import ProjectGrid from "../components/home/ProjectGrid"
 import About from "../components/home/About"
+import Team from "../components/home/Team"
 import Contact from "../components/home/Contact"
 
 export default function Home() {
@@ -40,6 +41,7 @@ export default function Home() {
       <Cinematic />
       <ProjectGrid />
       <About />
+      <Team />
       <Contact />
     </div>
   )

@@ -3,11 +3,12 @@
   "hero": {
     "title": "DEVELOP EC",
     "subtitle": "by Adamopoulos & Partners",
+    "descriptor": "ENGINEERING & CONSTRUCTION",
     "tagline": "FROM DESIGN TO CONSTRUCTION"
   },
   "statement": {
     "line": "We transform technical precision into spaces designed to endure.",
-    "intro": "Develop EC is a Greek construction and civil engineering practice. Since 2018 we have carried projects through every stage, from the first structural study to the final handover, for homes, hotels and industry across Greece.",
+    "intro": "Develop EC is a Greek construction and civil engineering practice. Since 2018 we have carried projects through every stage: from the first idea to the structural study, from the foundations to the final handover, and from structural reinforcement to complete renovation.",
     "stats": [
       { "value": 50, "suffix": "+", "label": "Projects" },
       { "value": 2018, "prefix": "Since ", "label": "Founded" },
@@ -21,7 +22,7 @@
       {
         "num": "01",
         "name": "Design & Study",
-        "desc": "Architectural and structural studies for residential, commercial, tourism, and industrial projects. Complete engineering solutions from concept to detailed plans."
+        "desc": "Architectural and structural studies for residential, commercial, tourism, and industrial projects. Complete engineering solutions from the idea to the structural study and detailed plans."
       },
       {
         "num": "02",
@@ -31,7 +32,7 @@
       {
         "num": "03",
         "name": "Construction & Supervision",
-        "desc": "Reinforced concrete and steel construction, renovation, and structural reinforcement. End-to-end project management from foundations to handover."
+        "desc": "Reinforced concrete and steel construction, from structural reinforcement to complete renovation. End-to-end project management from foundations to handover."
       }
     ]
   },
@@ -54,6 +55,25 @@
       { "label": "Scope", "value": "Design · Licensing · Funding · Construction" }
     ]
   },
+  "team": {
+    "kicker": "The team",
+    "title": "The people behind the work.",
+    "founderName": "Georgios Adamopoulos",
+    "founderRole": "Founder · Lead Structural Engineer",
+    "credentials": [
+      "MSc Structural Civil Engineer, National Technical University of Athens",
+      "MSc Local Development & Regional Administration, University of Piraeus"
+    ],
+    "body": "Behind every project stands a full multidisciplinary practice. Around Georgios, Develop EC brings together civil engineers, architects, structural engineers and surveyors in the studio, with experienced site supervisors and construction crews in the field. Design, licensing and construction are handled by one coordinated team, so nothing is lost between the drawing and the building site.",
+    "disciplines": [
+      "Civil Engineers",
+      "Architects",
+      "Structural Engineers",
+      "Surveyors",
+      "Site Supervisors",
+      "Construction Crews"
+    ]
+  },
   "contact": {
     "kicker": "Contact",
     "headline": "Let's talk about your next project.",
@@ -66,14 +86,16 @@
       "email": "Email",
       "phone": "Phone",
       "hours": "Hours",
-      "location": "Location",
+      "athens": "Athens Office",
+      "pyrgos": "Pyrgos Office",
       "instagram": "Instagram"
     },
     "info": {
       "email": "adamopoulos.gm@gmail.com",
       "phone": "2621 302634",
       "hours": "9:00 - 20:00",
-      "location": "Athens & Pyrgos, Peloponnese",
+      "athens": "Leof. Alexandrou Papanastasiou 5, Agios Dimitrios, Attiki 17343",
+      "pyrgos": "Konstantinou Kanari 9, Pyrgos Ileias 27131",
       "instagram": "@adamopoulos_ge",
       "instagramUrl": "https://instagram.com/adamopoulos_ge"
     }

@@ -43,9 +43,8 @@ export default function Statement() {
     <section className="statement section" ref={ref}>
       <h2 className="statement__text">
         {t.statement.line.split(" ").map((w, i) => (
-          <span key={i} className="word">
-            {w}
-            {" "}
+          <span key={i}>
+            <span className="word">{w}</span>{" "}
           </span>
         ))}
       </h2>

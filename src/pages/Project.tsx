@@ -90,39 +90,39 @@ export default function ProjectPage() {
 
       <section className="pident">
         <div className="pident__grid">
-          <div>
+          <div className="pident__main">
             <span className="kicker" data-reveal>
               {px.type} · {px.location}
             </span>
             <h2 className="pident__name" style={{ marginTop: 20 }} data-reveal>
               {px.name}
             </h2>
-            <div className="pident__meta" data-stagger>
-              <div>
-                <strong>{t.project.location}</strong>
-                <span>{px.location}</span>
-              </div>
-              <div>
-                <strong>{t.project.type}</strong>
-                <span>{px.type}</span>
-              </div>
-              <div>
-                <strong>{t.project.status}</strong>
-                <span>{px.status}</span>
-              </div>
-              <div>
-                <strong>{t.project.year}</strong>
-                <span>{project.year}</span>
-              </div>
-              <div style={{ gridColumn: "1 / -1" }}>
-                <strong>{t.project.services}</strong>
-                <span>{px.services}</span>
-              </div>
+            <p className="pident__desc" data-reveal>
+              {px.description}
+            </p>
+          </div>
+          <div className="pident__meta" data-stagger>
+            <div>
+              <strong>{t.project.location}</strong>
+              <span>{px.location}</span>
+            </div>
+            <div>
+              <strong>{t.project.type}</strong>
+              <span>{px.type}</span>
+            </div>
+            <div>
+              <strong>{t.project.status}</strong>
+              <span>{px.status}</span>
+            </div>
+            <div>
+              <strong>{t.project.year}</strong>
+              <span>{project.year}</span>
+            </div>
+            <div style={{ gridColumn: "1 / -1" }}>
+              <strong>{t.project.services}</strong>
+              <span>{px.services}</span>
             </div>
           </div>
-          <p className="pident__desc" data-reveal>
-            {px.description}
-          </p>
         </div>
       </section>
 
