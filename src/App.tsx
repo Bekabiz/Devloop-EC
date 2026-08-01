@@ -5,6 +5,7 @@ import { I18nProvider } from "./lib/i18n"
 import Loader from "./components/Loader"
 import Nav from "./components/Nav"
 import Footer from "./components/Footer"
+import ChatWidget from "./components/chat/ChatWidget"
 import Home from "./pages/Home"
 
 const ProjectPage = lazy(() => import("./pages/Project"))
@@ -52,6 +53,7 @@ export default function App() {
         </Suspense>
         <Footer />
       </div>
+      <ChatWidget />
     </I18nProvider>
   )
 }

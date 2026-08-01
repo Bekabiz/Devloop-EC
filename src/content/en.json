@@ -110,6 +110,19 @@
     "services": "Services",
     "next": "Next project"
   },
+  "chat": {
+    "launcher": "Ask us",
+    "title": "DEVELOP EC",
+    "subtitle": "Assistant",
+    "greeting": "Welcome to Develop EC. Ask us about our projects, our services, or how to start your own project.",
+    "placeholder": "Type your question…",
+    "send": "Send",
+    "close": "Close chat",
+    "chips": ["What services do you offer?", "Where do you build?", "Can you handle permits?"],
+    "limit": "For anything more detailed, please contact us directly at 2621 302634 or through the contact form.",
+    "limitLink": "Go to contact",
+    "error": "Something went wrong on our end. Please try again, or call us on 2621 302634."
+  },
   "footer": {
     "copyright": "© 2026 Develop EC. All rights reserved.",
     "credit": "Website by Evriel Systems",
