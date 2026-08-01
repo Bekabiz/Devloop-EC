@@ -77,12 +77,18 @@ export default function ProjectPage() {
     <div ref={ref}>
       <section className="phero" data-nav-dark-until="0.45">
         <video
+          className="hero-video"
           src={projectMedia.video(project)}
           poster={projectMedia.poster(project)}
           autoPlay
           muted
           loop
           playsInline
+          preload="auto"
+          controls={false}
+          disablePictureInPicture
+          disableRemotePlayback
+          tabIndex={-1}
         />
         <div className="phero__shade" />
         <h1 className="phero__name">{px.name}</h1>

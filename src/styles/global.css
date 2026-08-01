@@ -50,6 +50,20 @@ video {
   max-width: 100%;
 }
 
+/* hide the native iOS start-playback overlay so autoplay never flashes a button */
+.hero-video::-webkit-media-controls-start-playback-button {
+  display: none !important;
+  -webkit-appearance: none;
+  opacity: 0;
+  pointer-events: none;
+}
+.hero-video::-webkit-media-controls {
+  display: none !important;
+}
+.hero-video::-webkit-media-controls-panel {
+  display: none !important;
+}
+
 a {
   color: inherit;
   text-decoration: none;

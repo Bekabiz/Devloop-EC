@@ -1,4 +1,4 @@
-import { useEffect, useLayoutEffect, useRef, useState } from "react"
+import { useLayoutEffect, useRef, useState } from "react"
 import { gsap, prefersReducedMotion } from "../../lib/motion"
 import { useLang } from "../../lib/i18n"
 
@@ -20,30 +20,35 @@ export default function Hero() {
   const { t } = useLang()
   const [isMobile] = useState(() => window.matchMedia(MOBILE).matches)
 
-  // Force autoplay: some mobile browsers ignore the attribute unless
-  // muted is set as a DOM property before play() is attempted.
-  useEffect(() => {
+  // Start playback at the earliest possible moment, before first paint.
+  // muted must be set as a DOM property before play() or iOS blocks autoplay.
+  useLayoutEffect(() => {
     const v = videoRef.current
     if (!v) return
     v.muted = true
     v.defaultMuted = true
     v.setAttribute("muted", "")
     v.setAttribute("webkit-playsinline", "")
-    const tryPlay = () => {
-      v.play().catch(() => {
-        /* blocked: retry on first touch */
-        const kick = () => {
-          v.play().catch(() => {})
-          window.removeEventListener("touchstart", kick)
-          window.removeEventListener("click", kick)
-        }
-        window.addEventListener("touchstart", kick, { once: true, passive: true })
-        window.addEventListener("click", kick, { once: true })
-      })
+    const attempt = () => {
+      const p = v.play()
+      if (p)
+        p.catch(() => {
+          // retry once on first interaction as a last resort
+          const retry = () => {
+            v.play().catch(() => {})
+            cleanup()
+          }
+          const cleanup = () => {
+            document.removeEventListener("touchstart", retry)
+            document.removeEventListener("click", retry)
+          }
+          document.addEventListener("touchstart", retry, { once: true, passive: true })
+          document.addEventListener("click", retry, { once: true })
+        })
     }
-    if (v.readyState >= 2) tryPlay()
-    else v.addEventListener("loadeddata", tryPlay, { once: true })
-    return () => v.removeEventListener("loadeddata", tryPlay)
+    attempt()
+    v.addEventListener("loadeddata", attempt, { once: true })
+    return () => v.removeEventListener("loadeddata", attempt)
   }, [isMobile])
 
   useLayoutEffect(() => {
@@ -73,7 +78,7 @@ export default function Hero() {
       <video
         ref={videoRef}
         key={isMobile ? "m" : "d"}
-        className="hero__video"
+        className="hero__video hero-video"
         src={isMobile ? "/media/hero/hero-mobile.mp4" : "/media/hero/hero.mp4"}
         poster={isMobile ? "/media/hero/poster-mobile.jpg" : "/media/hero/poster.jpg"}
         autoPlay
@@ -81,6 +86,10 @@ export default function Hero() {
         loop
         playsInline
         preload="auto"
+        controls={false}
+        disablePictureInPicture
+        disableRemotePlayback
+        tabIndex={-1}
       />
       <div className="hero__overlay" />
       <div className="hero__content">
