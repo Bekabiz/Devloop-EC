@@ -9,6 +9,7 @@ import ChatWidget from "./components/chat/ChatWidget"
 import Home from "./pages/Home"
 
 const ProjectPage = lazy(() => import("./pages/Project"))
+const PrivacyPage = lazy(() => import("./pages/Privacy"))
 
 export default function App() {
   const location = useLocation()
@@ -48,6 +49,7 @@ export default function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/projects/:slug" element={<ProjectPage />} />
+            <Route path="/privacy" element={<PrivacyPage />} />
             <Route path="*" element={<Home />} />
           </Routes>
         </Suspense>

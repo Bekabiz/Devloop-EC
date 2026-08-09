@@ -2,7 +2,7 @@
   "nav": { "home": "HOME", "about": "ABOUT", "projects": "PROJECTS", "contact": "CONTACT" },
   "hero": {
     "title": "DEVELOP EC",
-    "subtitle": "by Adamopoulos & Partners",
+    "subtitle": "by adamopoulos & partners",
     "descriptor": "ENGINEERING & CONSTRUCTION",
     "tagline": "FROM DESIGN TO CONSTRUCTION"
   },
@@ -64,14 +64,17 @@
       "MSc Structural Civil Engineer, National Technical University of Athens",
       "MSc Local Development & Regional Administration, University of Piraeus"
     ],
-    "body": "Behind every project stands a full multidisciplinary practice. Around Georgios, Develop EC brings together civil engineers, architects, structural engineers and surveyors in the studio, with experienced site supervisors and construction crews in the field. Design, licensing and construction are handled by one coordinated team, so nothing is lost between the drawing and the building site.",
+    "body": "Behind every project stands a full multidisciplinary practice. Around Georgios, Develop EC brings together engineers, architects and surveyors in the studio, with experienced site supervisors and construction crews in the field. Design, licensing and construction are handled by one coordinated team, so nothing is lost between the drawing and the building site.",
     "disciplines": [
-      "Civil Engineers",
+      "Engineers",
       "Architects",
-      "Structural Engineers",
       "Surveyors",
       "Site Supervisors",
       "Construction Crews"
+    ],
+    "members": [
+      { "name": "Konstantina", "role": "Architect", "photo": "/media/team/konstantina.webp" },
+      { "name": "Gogo", "role": "Architect", "photo": "/media/team/gogo.webp" }
     ]
   },
   "contact": {
@@ -96,7 +99,7 @@
       "email": "adamopoulosandpartners@gmail.com",
       "phone": "2621 302634",
       "hours": "9:00 - 20:00",
-      "athens": "Leof. Alexandrou Papanastasiou 5, Agios Dimitrios, Attiki 17343",
+      "athens": "Leof. Alexandrou Papanastasiou 5, Agios Dimitrios, Attiki 17341",
       "pyrgos": "Konstantinou Kanari 9, Pyrgos Ileias 27131",
       "instagram": "@adamopoulos_ge",
       "instagramUrl": "https://instagram.com/adamopoulos_ge"
@@ -125,8 +128,35 @@
   },
   "footer": {
     "copyright": "© 2026 Develop EC. All rights reserved.",
+    "legal": "DEVELOP EC SINGLE MEMBER P.C. · VAT: EL802289937 · Reg. No (ΓΕΜΗ): 173724403000",
     "credit": "Website by Evriel Systems",
     "creditUrl": "https://evrielsystems.com",
     "privacy": "Privacy Policy"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "updated": "Last updated: August 2026",
+    "sections": [
+      {
+        "h": "Data controller",
+        "p": "The controller of your personal data is DEVELOP ENGINEERING CONSTRUCTION SINGLE MEMBER P.C. (distinctive title DEVELOP EC SINGLE MEMBER P.C.), VAT EL802289937, General Commercial Registry (ΓΕΜΗ) No 173724403000, with registered office at Leof. Alexandrou Papanastasiou 5, Agios Dimitrios, Athens 17341, Greece. You can reach us at adamopoulosandpartners@gmail.com or on 2621 302634."
+      },
+      {
+        "h": "What we collect",
+        "p": "When you use the contact form we receive the name, email address and message you submit. When you use the chat assistant, the messages you type are processed to generate a reply. Our hosting provider records standard technical logs such as IP address and browser type for security and performance."
+      },
+      {
+        "h": "Why we process it",
+        "p": "We use contact details solely to reply to your enquiry and discuss your project. We do not use your data for advertising, we do not sell it, and we do not send newsletters."
+      },
+      {
+        "h": "Service providers",
+        "p": "The site is hosted on Vercel. Contact form submissions are delivered to our inbox via the FormSubmit service. Chat messages are processed by OpenAI to generate replies. These providers process data on our behalf for the purposes described above."
+      },
+      {
+        "h": "Retention and your rights",
+        "p": "We keep enquiry emails only as long as needed to handle your request and any project discussion that follows. Under the GDPR you have the right to access, correct or delete your personal data, and to object to or restrict its processing. To exercise any right, email adamopoulosandpartners@gmail.com."
+      }
+    ]
   }
 }

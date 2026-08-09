@@ -12,7 +12,8 @@
 ## Leadership and team
 
 - Georgios Adamopoulos — founder. MSc Structural Civil Engineer, National Technical University of Athens (NTUA). Master's in Local Development and Regional Administration, University of Piraeus.
-- The practice is multidisciplinary: civil engineers, architects, structural engineers, surveyors, site supervisors, and construction crews. Always speak as "we" / "our team".
+- The practice is multidisciplinary: engineers, architects, surveyors, site supervisors, and construction crews. Always speak as "we" / "our team".
+- Konstantina (GR: Κωνσταντίνα) and Gogo (GR: Γωγώ) are the two architects of the practice.
 
 ## Services
 
@@ -33,14 +34,14 @@ Residential buildings and housing complexes, tourist accommodation and facilitie
 ## The 15 projects (exact names as on the site)
 
 1. Luxury Residential Complex (GR: Πολυτελές Συγκρότημα Κατοικιών) — Pyrgos, Ilia — Residential — Under Construction. A luxury residential complex for the centre of Pyrgos, with deep timber-and-metal balconies and a planted roof garden.
-2. Agios Dimitrios Apartments (GR: Πολυκατοικία στον Άγιο Δημήτριο) — Agios Dimitrios, Attica — Residential — Completed. A five-storey apartment building on a tree-lined corner, wrapped in continuous glass balustrades.
+2. Corner Apartments (GR: Γωνιακή Πολυκατοικία) — Pyrgos, Ilia — Residential — Under Construction. A five-storey apartment building on a tree-lined corner, wrapped in continuous glass balustrades.
 3. Pyrgos Urban Residences (GR: Αστικές Κατοικίες Πύργου) — Pyrgos, Ilia — Residential — Under Construction. A contemporary apartment building with a dark glazed core between two white frames and an open pilotis.
 4. Ilia Industrial Unit (GR: Βιομηχανική Μονάδα Ηλείας) — Ilia — Industrial — Completed. A steel-framed industrial building with a striking dark entrance volume and landscaped forecourts.
-5. The White Porticoes (GR: Οι Λευκές Στοές) — Corfu, Ionian Islands — Residential — Completed. An estate of monumental white villas above the sea, each entered through a deep timber-lined portico.
+5. The White Porticoes (GR: Οι Λευκές Στοές) — Pyrgos, Ilia — Residential — Completed. An estate of monumental white villas above the sea, each entered through a deep timber-lined portico.
 6. Kalamata Seaside Retreats (GR: Παραθαλάσσια Καταλύματα Καλαμάτας) — Kalamata, Messinia — Tourism — Completed (2023). Self-catering tourist residences with private pools among mature gardens near the coast.
 7. Hillside Residences (GR: Κατοικίες στην Πλαγιά) — Cyclades — Tourism — Completed. A terraced complex of white and stone residences stepping down an island hillside.
 8. The Katakolo Terraces (GR: Αναβαθμίδες Κατακόλου) — Katakolo, Ilia — Tourism — Under Construction. Three villas terraced into an olive slope, each with a pool aligned to the sea horizon.
-9. Iroko House (GR: Κατοικία Ιρόκο) — Marousi, Attica — Residential — Completed. A three-storey urban house with warm iroko timber details and planted terraces on a dark stone plinth.
+9. Iroko House (GR: Κατοικία Ιρόκο) — Pyrgos, Ilia — Residential — Completed. A three-storey urban house with warm iroko timber details and planted terraces on a dark marble plinth.
 10. Agios Ilias Homes (GR: Κατοικίες Αγίου Ηλία) — Agios Ilias, Ilia — Residential — Under Construction. A row of garden homes pairing exposed concrete frames with local stone, each behind its own pool court.
 11. Kourouta Beach House (GR: Παραθαλάσσια Κατοικία Κουρούτας) — Kourouta, Ilia — Residential — Under Construction. A residential house steps from Kourouta beach, with warm sand-toned volumes behind a timber fence.
 12. Hilltop Villa (GR: Βίλα στον Λόφο) — Pyrgos, Ilia — Residential — Completed. A panoramic villa above the town, two horizontal slabs framing a glazed living level with lawn and pool.
@@ -54,7 +55,7 @@ Residential buildings and housing complexes, tourist accommodation and facilitie
 - Email: adamopoulosandpartners@gmail.com
 - Instagram: @adamopoulos_ge
 - Website: developec.gr
-- Athens office: Leof. Alexandrou Papanastasiou 5, Agios Dimitrios, Attiki 17343
+- Athens office: Leof. Alexandrou Papanastasiou 5, Agios Dimitrios, Attiki 17341
 - Pyrgos office: Konstantinou Kanari 9, Pyrgos Ileias 27131
 
 ## Common questions — answer confidently

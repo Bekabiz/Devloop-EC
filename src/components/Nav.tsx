@@ -65,9 +65,12 @@ export default function Nav() {
 
   const scrollOrNav = (hash: string) => {
     setOpen(false)
-    if (location.pathname === "/" && hash) {
-      document.getElementById(hash)?.scrollIntoView({ behavior: "smooth" })
+    if (location.pathname === "/") {
+      if (hash) document.getElementById(hash)?.scrollIntoView({ behavior: "smooth" })
+      else window.scrollTo({ top: 0, behavior: "smooth" })
     }
+    // from any other page the Link navigation itself handles it;
+    // App resets scroll to the top on every route change
   }
 
   const flags = (
@@ -97,11 +100,18 @@ export default function Nav() {
     <>
       <header className={cls}>
         <Link to="/" className="nav__logo" onClick={() => scrollOrNav("")} aria-label="Develop EC home">
-          <img
-            src={solid || open ? "/media/logo/logo-black.svg" : "/media/logo/logo-white.svg"}
-            alt="Develop EC"
-            height={30}
-          />
+          {/* HTML lockup so ENGINEERING & CONSTRUCTION stays legible at nav size */}
+          <span className="lockup" aria-hidden="true">
+            <span className="lockup__text">
+              <span className="lockup__name">DEVELOP EC</span>
+              <span className="lockup__sub">ENGINEERING &amp; CONSTRUCTION</span>
+            </span>
+            <img
+              src={solid || open ? "/media/logo/mark-black.svg" : "/media/logo/mark-white.svg"}
+              alt=""
+              className="lockup__mark"
+            />
+          </span>
         </Link>
         <div className="nav__right">
           <nav className="nav__links" aria-label="Main navigation">

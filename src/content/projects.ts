@@ -89,18 +89,18 @@ export const projects: Project[] = [
     },
   },
   {
-    slug: "agios-dimitrios-apartments",
+    slug: "corner-apartments",
     year: "2025",
     photoCount: 6,
     i18n: {
       en: {
-        name: "Agios Dimitrios Apartments",
-        location: "Agios Dimitrios, Attica",
+        name: "Corner Apartments",
+        location: "Pyrgos, Ilia",
         type: "Residential",
-        status: "Completed",
+        status: "Under Construction",
         services: "Architectural Study · Structural Study · Construction",
         description:
-          "A five-storey apartment building on a tree-lined corner in Agios Dimitrios. Continuous glass balustrades wrap the slabs so every living room borrows the green of the avenue, while the recessed top floor dissolves the building against the sky. The ground level holds a fully glazed commercial front behind the plane trees.",
+          "A five-storey apartment building on a tree-lined corner of Pyrgos. Continuous glass balustrades wrap the slabs so every living room borrows the green of the avenue, while the recessed top floor dissolves the building against the sky. The ground level holds a fully glazed commercial front behind the plane trees.",
         captions: {
           2: {
             kicker: "The corner",
@@ -117,13 +117,13 @@ export const projects: Project[] = [
         },
       },
       gr: {
-        name: "Πολυκατοικία στον Άγιο Δημήτριο",
-        location: "Άγιος Δημήτριος, Αττική",
+        name: "Γωνιακή Πολυκατοικία",
+        location: "Πύργος, Ηλεία",
         type: "Οικιστικό",
-        status: "Ολοκληρωμένο",
+        status: "Υπό κατασκευή",
         services: "Αρχιτεκτονική Μελέτη · Στατική Μελέτη · Κατασκευή",
         description:
-          "Μια πενταώροφη πολυκατοικία σε δενδροφυτεμένη γωνία στον Άγιο Δημήτριο. Συνεχή γυάλινα στηθαία τυλίγουν τις πλάκες ώστε κάθε καθιστικό να δανείζεται το πράσινο της λεωφόρου, ενώ ο εσοχικός τελευταίος όροφος διαλύει το κτίριο στον ουρανό. Το ισόγειο φιλοξενεί πλήρως υαλωτό επαγγελματικό μέτωπο πίσω από τα πλατάνια.",
+          "Μια πενταώροφη πολυκατοικία σε δενδροφυτεμένη γωνία του Πύργου. Συνεχή γυάλινα στηθαία τυλίγουν τις πλάκες ώστε κάθε καθιστικό να δανείζεται το πράσινο της λεωφόρου, ενώ ο εσοχικός τελευταίος όροφος διαλύει το κτίριο στον ουρανό. Το ισόγειο φιλοξενεί πλήρως υαλωτό επαγγελματικό μέτωπο πίσω από τα πλατάνια.",
         captions: {
           2: {
             kicker: "Η γωνία",
@@ -254,7 +254,7 @@ export const projects: Project[] = [
     i18n: {
       en: {
         name: "The White Porticoes",
-        location: "Corfu, Ionian Islands",
+        location: "Pyrgos, Ilia",
         type: "Residential",
         status: "Completed",
         services: "Design · Licensing · Construction",
@@ -277,7 +277,7 @@ export const projects: Project[] = [
       },
       gr: {
         name: "Οι Λευκές Στοές",
-        location: "Κέρκυρα, Ιόνιο",
+        location: "Πύργος, Ηλεία",
         type: "Οικιστικό",
         status: "Ολοκληρωμένο",
         services: "Μελέτη · Αδειοδότηση · Κατασκευή",
@@ -466,12 +466,12 @@ export const projects: Project[] = [
     i18n: {
       en: {
         name: "Iroko House",
-        location: "Marousi, Attica",
+        location: "Pyrgos, Ilia",
         type: "Residential",
         status: "Completed",
         services: "Architectural Study · Structural Study · Construction",
         description:
-          "A three-storey urban house on a quiet Athenian street, named for the warm iroko timber that lines its soffits and window reveals. Planted terraces step back floor by floor above a dark stone plinth, so the building reads as a stack of gardens rather than a block. A single vertical timber spine ties the composition together.",
+          "A three-storey urban house on a quiet street of Pyrgos, named for the warm iroko timber that lines its soffits and window reveals. Planted terraces step back floor by floor above a dark marble plinth, so the building reads as a stack of gardens rather than a block. A single vertical timber spine ties the composition together.",
         captions: {
           2: {
             kicker: "The spine",
@@ -482,19 +482,19 @@ export const projects: Project[] = [
             text: "Each floor pulls back to plant its own terrace, softening the street with layers of green.",
           },
           5: {
-            kicker: "The plinth",
-            text: "Dark stone grounds the building, a quiet, solid base beneath the warm timber storeys.",
+            kicker: "The marble plinth",
+            text: "Dark marble grounds the building, a quiet, solid base beneath the warm timber storeys.",
           },
         },
       },
       gr: {
         name: "Κατοικία Ιρόκο",
-        location: "Μαρούσι, Αττική",
+        location: "Πύργος, Ηλεία",
         type: "Οικιστικό",
         status: "Ολοκληρωμένο",
         services: "Αρχιτεκτονική Μελέτη · Στατική Μελέτη · Κατασκευή",
         description:
-          "Μια τριώροφη αστική κατοικία σε ήσυχο αθηναϊκό δρόμο, με όνομα από το ζεστό ξύλο ιρόκο που ντύνει τις οροφές και τα ανοίγματά της. Φυτεμένες βεράντες αποσύρονται όροφο με όροφο πάνω από μια σκούρα πέτρινη βάση, ώστε το κτίριο να διαβάζεται ως στοίβα κήπων και όχι ως όγκος. Μία κατακόρυφη ξύλινη ραχοκοκαλιά δένει τη σύνθεση.",
+          "Μια τριώροφη αστική κατοικία σε ήσυχο δρόμο του Πύργου, με όνομα από το ζεστό ξύλο ιρόκο που ντύνει τις οροφές και τα ανοίγματά της. Φυτεμένες βεράντες αποσύρονται όροφο με όροφο πάνω από μια βάση από σκούρο μάρμαρο, ώστε το κτίριο να διαβάζεται ως στοίβα κήπων και όχι ως όγκος. Μία κατακόρυφη ξύλινη ραχοκοκαλιά δένει τη σύνθεση.",
         captions: {
           2: {
             kicker: "Η ραχοκοκαλιά",
@@ -505,8 +505,8 @@ export const projects: Project[] = [
             text: "Κάθε όροφος αποσύρεται για να φυτέψει τη δική του βεράντα, απαλύνοντας τον δρόμο με στρώσεις πρασίνου.",
           },
           5: {
-            kicker: "Η βάση",
-            text: "Η σκούρα πέτρα γειώνει το κτίριο, μια ήσυχη, στιβαρή βάση κάτω από τους ζεστούς ξύλινους ορόφους.",
+            kicker: "Η μαρμάρινη βάση",
+            text: "Το σκούρο μάρμαρο γειώνει το κτίριο, μια ήσυχη, στιβαρή βάση κάτω από τους ζεστούς ξύλινους ορόφους.",
           },
         },
       },
