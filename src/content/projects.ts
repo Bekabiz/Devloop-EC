@@ -301,18 +301,18 @@ export const projects: Project[] = [
     },
   },
   {
-    slug: "kalamata-retreats",
+    slug: "pyrgos-seaside-retreats",
     year: "2023",
     photoCount: 6,
     i18n: {
       en: {
-        name: "Kalamata Seaside Retreats",
-        location: "Kalamata, Messinia",
+        name: "Pyrgos Seaside Retreats",
+        location: "Pyrgos, Ilia",
         type: "Tourism",
         status: "Completed",
         services: "Design · Licensing · Construction",
         description:
-          "A cluster of self-catering tourist residences set among mature gardens near the coast of Kalamata. Timber pergolas and clay-tiled roofs shade private pools, while each unit opens onto its own landscaped court: a quiet, low-rise settlement that grows out of the olive landscape rather than sitting on top of it.",
+          "A cluster of self-catering tourist residences set among mature gardens near the coast of Pyrgos. Timber pergolas and clay-tiled roofs shade private pools, while each unit opens onto its own landscaped court: a quiet, low-rise settlement that grows out of the olive landscape rather than sitting on top of it.",
         captions: {
           2: {
             kicker: "The settlement",
@@ -320,22 +320,22 @@ export const projects: Project[] = [
           },
           3: {
             kicker: "Private courts",
-            text: "Every unit holds its own pool and terrace, framed by pergolas that filter the Messinian light.",
+            text: "Every unit holds its own pool and terrace, framed by pergolas that filter the light of the Ionian coast.",
           },
           5: {
             kicker: "Materiality",
-            text: "Clay tile, warm timber and rough stone, a palette drawn directly from the rural buildings of Messinia.",
+            text: "Clay tile, warm timber and rough stone, a palette drawn directly from the rural buildings of Ilia.",
           },
         },
       },
       gr: {
-        name: "Παραθαλάσσια Καταλύματα Καλαμάτας",
-        location: "Καλαμάτα, Μεσσηνία",
+        name: "Παραθαλάσσια Καταλύματα Πύργου",
+        location: "Πύργος, Ηλεία",
         type: "Τουριστικό",
         status: "Ολοκληρωμένο",
         services: "Μελέτη · Αδειοδότηση · Κατασκευή",
         description:
-          "Ένα σύνολο αυτοεξυπηρετούμενων τουριστικών καταλυμάτων μέσα σε ώριμους κήπους κοντά στην ακτή της Καλαμάτας. Ξύλινες πέργκολες και κεραμοσκεπές σκιάζουν ιδιωτικές πισίνες, ενώ κάθε μονάδα ανοίγει στη δική της διαμορφωμένη αυλή: ένας ήσυχος, χαμηλός οικισμός που αναδύεται μέσα από το τοπίο της ελιάς.",
+          "Ένα σύνολο αυτοεξυπηρετούμενων τουριστικών καταλυμάτων μέσα σε ώριμους κήπους κοντά στην ακτή του Πύργου. Ξύλινες πέργκολες και κεραμοσκεπές σκιάζουν ιδιωτικές πισίνες, ενώ κάθε μονάδα ανοίγει στη δική της διαμορφωμένη αυλή: ένας ήσυχος, χαμηλός οικισμός που αναδύεται μέσα από το τοπίο της ελιάς.",
         captions: {
           2: {
             kicker: "Ο οικισμός",
@@ -343,11 +343,11 @@ export const projects: Project[] = [
           },
           3: {
             kicker: "Ιδιωτικές αυλές",
-            text: "Κάθε μονάδα διαθέτει δική της πισίνα και βεράντα, πλαισιωμένη από πέργκολες που φιλτράρουν το μεσσηνιακό φως.",
+            text: "Κάθε μονάδα διαθέτει δική της πισίνα και βεράντα, πλαισιωμένη από πέργκολες που φιλτράρουν το φως του Ιονίου.",
           },
           5: {
             kicker: "Υλικότητα",
-            text: "Κεραμίδι, ζεστό ξύλο και ακατέργαστη πέτρα, μια παλέτα βγαλμένη από τα αγροτικά κτίσματα της Μεσσηνίας.",
+            text: "Κεραμίδι, ζεστό ξύλο και ακατέργαστη πέτρα, μια παλέτα βγαλμένη από τα αγροτικά κτίσματα της Ηλείας.",
           },
         },
       },

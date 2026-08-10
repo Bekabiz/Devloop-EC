@@ -1,7 +1,7 @@
 /**
  * Display order of /media/cinematic/NN.webp, by project hierarchy:
  * biggest built projects first, then smaller ones, construction reality last.
- * 11,12 luxury complex · 7,8 industrial · 4 Kalamata settlement · 9 Cycladic
+ * 11,12 luxury complex · 7,8 industrial · 4 Pyrgos retreats settlement · 9 Cycladic
  * complex · 14,15 Katakolo terraces · 16-18 hilltop villa · 10 Agios Ilias ·
  * 13 Kourouta · 2,1,5,6 small villas · 3 Chalandri · 19-30 construction.
  */

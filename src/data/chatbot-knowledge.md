@@ -13,7 +13,7 @@
 
 - Georgios Adamopoulos — founder. MSc Structural Civil Engineer, National Technical University of Athens (NTUA). Master's in Local Development and Regional Administration, University of Piraeus.
 - The practice is multidisciplinary: engineers, architects, surveyors, site supervisors, and construction crews. Always speak as "we" / "our team".
-- Konstantina (GR: Κωνσταντίνα) and Georgia (GR: Γεωργία) are the two architects of the practice.
+- Konstantina (GR: Κωνσταντίνα) and Georgia (GR: Γεωργία) are civil engineers of the practice.
 
 ## Services
 
@@ -38,7 +38,7 @@ Residential buildings and housing complexes, tourist accommodation and facilitie
 3. Pyrgos Urban Residences (GR: Αστικές Κατοικίες Πύργου) — Pyrgos, Ilia — Residential — Under Construction. A contemporary apartment building with a dark glazed core between two white frames and an open pilotis.
 4. Ilia Industrial Unit (GR: Βιομηχανική Μονάδα Ηλείας) — Ilia — Industrial — Completed. A steel-framed industrial building with a striking dark entrance volume and landscaped forecourts.
 5. The White Porticoes (GR: Οι Λευκές Στοές) — Pyrgos, Ilia — Residential — Completed. An estate of monumental white villas above the sea, each entered through a deep timber-lined portico.
-6. Kalamata Seaside Retreats (GR: Παραθαλάσσια Καταλύματα Καλαμάτας) — Kalamata, Messinia — Tourism — Completed (2023). Self-catering tourist residences with private pools among mature gardens near the coast.
+6. Pyrgos Seaside Retreats (GR: Παραθαλάσσια Καταλύματα Πύργου) — Pyrgos, Ilia — Tourism — Completed (2023). Self-catering tourist residences with private pools among mature gardens near the coast.
 7. Hillside Residences (GR: Κατοικίες στην Πλαγιά) — Cyclades — Tourism — Completed. A terraced complex of white and stone residences stepping down an island hillside.
 8. The Katakolo Terraces (GR: Αναβαθμίδες Κατακόλου) — Katakolo, Ilia — Tourism — Under Construction. Three villas terraced into an olive slope, each with a pool aligned to the sea horizon.
 9. Iroko House (GR: Κατοικία Ιρόκο) — Pyrgos, Ilia — Residential — Completed. A three-storey urban house with warm iroko timber details and planted terraces on a dark marble plinth.
