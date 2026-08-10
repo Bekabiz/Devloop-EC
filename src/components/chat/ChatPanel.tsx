@@ -170,6 +170,7 @@ export default function ChatPanel({ open, onClose }: { open: boolean; onClose: (
           </svg>
         </button>
       </form>
+      <p className="chat-panel__disclaimer">{t.chat.disclaimer}</p>
     </div>
   )
 }

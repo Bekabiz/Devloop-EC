@@ -16,19 +16,19 @@ const MOBILE = "(max-width: 768px)"
  */
 export default function Hero() {
   const ref = useRef<HTMLElement>(null)
-  const videoRef = useRef<HTMLVideoElement>(null)
+  const wrapRef = useRef<HTMLDivElement>(null)
   const { t } = useLang()
   const [isMobile] = useState(() => window.matchMedia(MOBILE).matches)
+  const src = isMobile ? "/media/hero/hero-mobile.mp4" : "/media/hero/hero.mp4"
+  const posterSrc = isMobile ? "/media/hero/poster-mobile.jpg" : "/media/hero/poster.jpg"
 
   // Start playback at the earliest possible moment, before first paint.
   // muted must be set as a DOM property before play() or iOS blocks autoplay.
   useLayoutEffect(() => {
-    const v = videoRef.current
+    const v = wrapRef.current?.querySelector("video")
     if (!v) return
     v.muted = true
     v.defaultMuted = true
-    v.setAttribute("muted", "")
-    v.setAttribute("webkit-playsinline", "")
     const attempt = () => {
       const p = v.play()
       if (p)
@@ -75,21 +75,15 @@ export default function Hero() {
 
   return (
     <section className="hero" ref={ref} data-nav-dark-until="1.7">
-      <video
-        ref={videoRef}
-        key={isMobile ? "m" : "d"}
-        className="hero__video hero-video"
-        src={isMobile ? "/media/hero/hero-mobile.mp4" : "/media/hero/hero.mp4"}
-        poster={isMobile ? "/media/hero/poster-mobile.jpg" : "/media/hero/poster.jpg"}
-        autoPlay
-        muted
-        loop
-        playsInline
-        preload="auto"
-        controls={false}
-        disablePictureInPicture
-        disableRemotePlayback
-        tabIndex={-1}
+      {/* literal HTML so muted/playsinline exist as real attributes when the
+          element is parsed: React sets muted only as a JS property, which iOS
+          Safari can reject for autoplay and then shows its play button */}
+      <div
+        ref={wrapRef}
+        className="hero__videowrap"
+        dangerouslySetInnerHTML={{
+          __html: `<video class="hero__video hero-video" src="${src}" poster="${posterSrc}" autoplay muted loop playsinline webkit-playsinline preload="auto" disablepictureinpicture disableremoteplayback tabindex="-1"></video>`,
+        }}
       />
       <div className="hero__overlay" />
       <div className="hero__content">

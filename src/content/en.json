@@ -1,5 +1,10 @@
 {
-  "nav": { "home": "HOME", "about": "ABOUT", "projects": "PROJECTS", "contact": "CONTACT" },
+  "nav": {
+    "home": "HOME",
+    "about": "ABOUT",
+    "projects": "PROJECTS",
+    "contact": "CONTACT"
+  },
   "hero": {
     "title": "DEVELOP EC",
     "subtitle": "by adamopoulos & partners",
@@ -10,9 +15,21 @@
     "line": "We transform technical precision into spaces designed to endure.",
     "intro": "Develop EC is a Greek construction and civil engineering practice. Since 2018 we have carried projects through every stage: from the first idea to the structural study, from the foundations to the final handover, and from structural reinforcement to complete renovation.",
     "stats": [
-      { "value": 50, "suffix": "+", "label": "Projects" },
-      { "value": 2018, "prefix": "Since ", "label": "Founded" },
-      { "value": 6, "suffix": "", "label": "Regions" }
+      {
+        "value": 50,
+        "suffix": "+",
+        "label": "Projects"
+      },
+      {
+        "value": 2018,
+        "prefix": "Since ",
+        "label": "Founded"
+      },
+      {
+        "value": 6,
+        "suffix": "",
+        "label": "Regions"
+      }
     ]
   },
   "services": {
@@ -49,10 +66,22 @@
     "title": "Engineering-led, since 2018.",
     "body": "Develop EC was founded by Georgios Adamopoulos, MSc Structural Civil Engineer from the National Technical University of Athens, with a Master's in Local Development from the University of Piraeus. Since 2018, through the engineering office adamopoulos+partners and the construction company Develop EC, we deliver complete project solutions: from site acquisition and design, through financing and management, to construction and handover. With projects across Ilia, Attica, the Cyclades, Thessaly, Messinia, and the Ionian Islands, we have designed and built residential complexes, tourist facilities, commercial buildings, and public infrastructure. Our goal: creating projects of real value for our clients and local communities.",
     "facts": [
-      { "label": "Founder", "value": "Georgios Adamopoulos, MSc NTUA" },
-      { "label": "Established", "value": "2018, Athens & Pyrgos, Ilia" },
-      { "label": "Regions", "value": "Ilia · Attica · Cyclades · Thessaly · Messinia · Ionian" },
-      { "label": "Scope", "value": "Design · Licensing · Funding · Construction" }
+      {
+        "label": "Founder",
+        "value": "Georgios Adamopoulos, MSc NTUA"
+      },
+      {
+        "label": "Established",
+        "value": "2018, Athens & Pyrgos, Ilia"
+      },
+      {
+        "label": "Regions",
+        "value": "Ilia · Attica · Cyclades · Thessaly · Messinia · Ionian"
+      },
+      {
+        "label": "Scope",
+        "value": "Design · Licensing · Funding · Construction"
+      }
     ]
   },
   "team": {
@@ -73,8 +102,16 @@
       "Construction Crews"
     ],
     "members": [
-      { "name": "Konstantina", "role": "Architect", "photo": "/media/team/konstantina.webp" },
-      { "name": "Georgia", "role": "Architect", "photo": "/media/team/georgia.webp" }
+      {
+        "name": "Konstantina",
+        "role": "Architect",
+        "photo": "/media/team/konstantina.webp"
+      },
+      {
+        "name": "Georgia",
+        "role": "Architect",
+        "photo": "/media/team/georgia.webp"
+      }
     ]
   },
   "contact": {
@@ -121,10 +158,15 @@
     "placeholder": "Type your question…",
     "send": "Send",
     "close": "Close chat",
-    "chips": ["What services do you offer?", "Where do you build?", "Can you handle permits?"],
+    "chips": [
+      "What services do you offer?",
+      "Where do you build?",
+      "Can you handle permits?"
+    ],
     "limit": "For anything more detailed, please contact us directly at 2621 302634 or through the contact form.",
     "limitLink": "Go to contact",
-    "error": "Something went wrong on our end. Please try again, or call us on 2621 302634."
+    "error": "Something went wrong on our end. Please try again, or call us on 2621 302634.",
+    "disclaimer": "AI assistant, may make mistakes. Please confirm important details with us."
   },
   "footer": {
     "copyright": "© 2026 Develop EC. All rights reserved.",

@@ -2,6 +2,7 @@ import { Suspense, lazy, useEffect, useLayoutEffect, useRef, useState } from "re
 import { Route, Routes, useLocation } from "react-router-dom"
 import { gsap, ScrollTrigger, initLenis, scrollToTop, prefersReducedMotion } from "./lib/motion"
 import { I18nProvider } from "./lib/i18n"
+import Seo from "./lib/seo"
 import Loader from "./components/Loader"
 import Nav from "./components/Nav"
 import Footer from "./components/Footer"
@@ -42,6 +43,7 @@ export default function App() {
 
   return (
     <I18nProvider>
+      <Seo />
       {!booted && <Loader onDone={() => setBooted(true)} />}
       <Nav />
       <div ref={mainRef}>

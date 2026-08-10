@@ -15,9 +15,11 @@ interface I18n {
 const Ctx = createContext<I18n>({ lang: "en", setLang: () => {}, t: en })
 
 export function I18nProvider({ children }: { children: ReactNode }) {
-  const [lang, setLang] = useState<Lang>(() =>
-    localStorage.getItem("lang") === "gr" ? "gr" : "en"
-  )
+  const [lang, setLang] = useState<Lang>(() => {
+    const param = new URLSearchParams(window.location.search).get("lang")
+    if (param === "gr" || param === "en") return param
+    return localStorage.getItem("lang") === "gr" ? "gr" : "en"
+  })
 
   useEffect(() => {
     localStorage.setItem("lang", lang)
