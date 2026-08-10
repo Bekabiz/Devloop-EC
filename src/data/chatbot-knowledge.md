@@ -13,7 +13,7 @@
 
 - Georgios Adamopoulos — founder. MSc Structural Civil Engineer, National Technical University of Athens (NTUA). Master's in Local Development and Regional Administration, University of Piraeus.
 - The practice is multidisciplinary: engineers, architects, surveyors, site supervisors, and construction crews. Always speak as "we" / "our team".
-- Konstantina (GR: Κωνσταντίνα) and Gogo (GR: Γωγώ) are the two architects of the practice.
+- Konstantina (GR: Κωνσταντίνα) and Georgia (GR: Γεωργία) are the two architects of the practice.
 
 ## Services
 

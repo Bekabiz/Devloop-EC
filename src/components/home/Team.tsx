@@ -34,18 +34,20 @@ export default function Team() {
               </span>
             ))}
           </div>
-          <div className="team__members" data-stagger>
-            {t.team.members.map((m) => (
-              <figure className="team__member" key={m.photo}>
-                <img src={m.photo} alt={m.name} loading="lazy" />
-                <figcaption>
-                  <strong>{m.name}</strong>
-                  <span>{m.role}</span>
-                </figcaption>
-              </figure>
-            ))}
-          </div>
         </div>
+      </div>
+      <div className="team__members" data-stagger>
+        {t.team.members.map((m) => (
+          <figure className="team__member" key={m.photo}>
+            <div className="team__member-media">
+              <img src={m.photo} alt={m.name} loading="lazy" />
+            </div>
+            <figcaption>
+              <strong>{m.name}</strong>
+              <span>{m.role}</span>
+            </figcaption>
+          </figure>
+        ))}
       </div>
     </section>
   )

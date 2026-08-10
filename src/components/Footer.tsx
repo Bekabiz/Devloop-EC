@@ -6,7 +6,13 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer__brand">
-        <img src="/media/logo/logo-black.png" alt="Develop EC" height={20} />
+        <span className="lockup lockup--footer" aria-label="Develop EC">
+          <span className="lockup__text">
+            <span className="lockup__name">DEVELOP EC</span>
+            <span className="lockup__sub">ENGINEERING &amp; CONSTRUCTION</span>
+          </span>
+          <img src="/media/logo/mark-black.svg" alt="" className="lockup__mark" />
+        </span>
         <span className="footer__legal">{t.footer.legal}</span>
       </div>
       <div className="footer__meta">
