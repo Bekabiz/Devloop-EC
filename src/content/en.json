@@ -111,6 +111,11 @@
         "name": "Georgia",
         "role": "Civil Engineer",
         "photo": "/media/team/georgia.webp"
+      },
+      {
+        "name": "Vaso Fotopoulou",
+        "role": "Structural Engineer",
+        "photo": "/media/team/vaso.webp"
       }
     ]
   },

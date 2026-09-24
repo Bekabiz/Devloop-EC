@@ -13,7 +13,7 @@
 
 - Georgios Adamopoulos — founder. MSc Structural Civil Engineer, National Technical University of Athens (NTUA). Master's in Local Development and Regional Administration, University of Piraeus.
 - The practice is multidisciplinary: engineers, architects, surveyors, site supervisors, and construction crews. Always speak as "we" / "our team".
-- Konstantina (GR: Κωνσταντίνα) and Georgia (GR: Γεωργία) are civil engineers of the practice.
+- Konstantina (GR: Κωνσταντίνα) and Georgia (GR: Γεωργία) are civil engineers of the practice. Vaso Fotopoulou (GR: Βάσω Φωτοπούλου) is a structural engineer of the practice.
 
 ## Services
 
@@ -31,7 +31,7 @@ Ilia (Ηλεία), Attica (Αττική), the Cyclades (Κυκλάδες), Thess
 
 Residential buildings and housing complexes, tourist accommodation and facilities, commercial and industrial units, sports facilities, and public infrastructure. Also renovations, repairs and structural reinforcement of existing buildings.
 
-## The 15 projects (exact names as on the site)
+## The 16 projects (exact names as on the site)
 
 1. Luxury Residential Complex (GR: Πολυτελές Συγκρότημα Κατοικιών) — Pyrgos, Ilia — Residential — Under Construction. A luxury residential complex for the centre of Pyrgos, with deep timber-and-metal balconies and a planted roof garden.
 2. Corner Apartments (GR: Γωνιακή Πολυκατοικία) — Pyrgos, Ilia — Residential — Under Construction. A five-storey apartment building on a tree-lined corner, wrapped in continuous glass balustrades.
@@ -48,6 +48,7 @@ Residential buildings and housing complexes, tourist accommodation and facilitie
 13. Chalandri Residence (GR: Κατοικία στο Χαλάνδρι) — Chalandri, Attica — Residential — Under Construction. A sculptural corner house of two white cantilevered volumes above a glazed ground floor.
 14. Thalassa Bungalows (GR: Μπανγκαλόου Θάλασσα) — Messinia — Tourism — Completed. Single-storey stone bungalows in coastal gardens, each with its own long pool.
 15. Archos Villa (GR: Βίλα Άρχος) — Santorini — Tourism — Completed. A vaulted stone-and-plaster villa with a monumental arch and an infinity pool toward the Aegean.
+16. Elaia Villa (GR: Βίλα Ελαία) — Pyrgos, Ilia — Residential — Under Construction (started 2026). A compact two-storey villa framed by olive trees, with a timber-lined loggia, a sheltered carport and a glazed double-height entrance.
 
 ## Contact
 

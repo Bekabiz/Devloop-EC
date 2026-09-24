@@ -111,6 +111,11 @@
         "name": "Γεωργία",
         "role": "Πολιτικός Μηχανικός",
         "photo": "/media/team/georgia.webp"
+      },
+      {
+        "name": "Βάσω Φωτοπούλου",
+        "role": "Δομοστατικός Μηχανικός",
+        "photo": "/media/team/vaso.webp"
       }
     ]
   },

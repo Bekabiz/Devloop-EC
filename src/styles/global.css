@@ -1052,9 +1052,9 @@ button {
   border-top: 1px solid var(--line);
   padding-top: clamp(40px, 6vh, 64px);
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 440px));
+  grid-template-columns: repeat(3, minmax(0, 380px));
   justify-content: center;
-  gap: clamp(32px, 7vw, 110px);
+  gap: clamp(28px, 4.5vw, 72px);
 }
 .team__member-media {
   overflow: hidden;
@@ -1096,10 +1096,15 @@ button {
     max-width: 460px;
   }
 }
-@media (max-width: 560px) {
+@media (max-width: 700px) {
   .team__members {
     grid-template-columns: 1fr;
     gap: 40px;
+  }
+  .team__member {
+    max-width: 380px;
+    margin: 0 auto;
+    width: 100%;
   }
 }
 

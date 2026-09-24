@@ -830,6 +830,59 @@ export const projects: Project[] = [
       },
     },
   },
+  {
+    slug: "elaia-villa",
+    year: "2026",
+    photoCount: 6,
+    i18n: {
+      en: {
+        name: "Elaia Villa",
+        location: "Pyrgos, Ilia",
+        type: "Residential",
+        status: "Under Construction",
+        services: "Architectural Study · Structural Study · Construction",
+        description:
+          "A compact two-storey villa for a quiet street of Pyrgos, framed by mature olive trees. Two white rendered volumes hold a warm timber-lined loggia between them, with a sheltered carport below and a glazed double-height entrance beside it. Uplit courtyard walls turn the whole forecourt into an evening room.",
+        captions: {
+          2: {
+            kicker: "The garden front",
+            text: "Toward the garden the house opens completely, sliding glass walls joining the living room, the lawn and the upper balcony.",
+          },
+          3: {
+            kicker: "Arrival",
+            text: "The carport, the entrance stair and the tall glazed hall are gathered under one deep timber soffit.",
+          },
+          5: {
+            kicker: "The loggia",
+            text: "A glass balustrade and a continuous iroko ceiling make the upper terrace an open-air extension of the living floor.",
+          },
+        },
+      },
+      gr: {
+        name: "Βίλα Ελαία",
+        location: "Πύργος, Ηλεία",
+        type: "Οικιστικό",
+        status: "Υπό κατασκευή",
+        services: "Αρχιτεκτονική Μελέτη · Στατική Μελέτη · Κατασκευή",
+        description:
+          "Μια διώροφη βίλα σε έναν ήσυχο δρόμο του Πύργου, πλαισιωμένη από αιωνόβιες ελιές. Δύο λευκοί επιχρισμένοι όγκοι αγκαλιάζουν μια ζεστή ξύλινη λότζια, με στεγασμένη θέση στάθμευσης από κάτω και γυάλινη είσοδο διπλού ύψους δίπλα της. Οι φωτισμένοι τοίχοι της αυλής μετατρέπουν το προαύλιο σε βραδινό δωμάτιο.",
+        captions: {
+          2: {
+            kicker: "Η πλευρά του κήπου",
+            text: "Προς τον κήπο το σπίτι ανοίγει πλήρως, με συρόμενα υαλοστάσια που ενώνουν το καθιστικό, το γκαζόν και το επάνω μπαλκόνι.",
+          },
+          3: {
+            kicker: "Η άφιξη",
+            text: "Η θέση στάθμευσης, η σκάλα εισόδου και το ψηλό γυάλινο χολ συγκεντρώνονται κάτω από μία βαθιά ξύλινη οροφή.",
+          },
+          5: {
+            kicker: "Η λότζια",
+            text: "Το γυάλινο στηθαίο και η συνεχής οροφή από ιρόκο κάνουν την επάνω βεράντα υπαίθρια προέκταση του ορόφου.",
+          },
+        },
+      },
+    },
+  },
 ]
 
 export const getProject = (slug: string) => projects.find((p) => p.slug === slug)

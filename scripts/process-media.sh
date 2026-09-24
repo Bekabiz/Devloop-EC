@@ -74,6 +74,7 @@ webp "$SRC/team/georgios.jpg" "$OUT/team/georgios.webp" 1200 85
 webp "$SRC/team/georgios.jpg" "$OUT/team/georgios-m.webp" 700 80
 webp "$SRC/team/konstantina.png" "$OUT/team/konstantina.webp" 900 85
 webp "$SRC/team/georgia.png" "$OUT/team/georgia.webp" 900 85
+webp "$SRC/team/vaso.png" "$OUT/team/vaso.webp" 900 85
 echo "done: team"
 
 # ---- 3D/cinematic gallery: 30 photos, plus HD copies of the mobile subset ----

@@ -113,6 +113,13 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://developec.gr/projects/archos-villa" />
   </url>
   <url>
+    <loc>https://developec.gr/projects/elaia-villa</loc>
+    <lastmod>2026-09-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://developec.gr/projects/elaia-villa?lang=en" />
+    <xhtml:link rel="alternate" hreflang="el" href="https://developec.gr/projects/elaia-villa?lang=gr" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://developec.gr/projects/elaia-villa" />
+  </url>
+  <url>
     <loc>https://developec.gr/privacy</loc>
     <lastmod>2026-08-10</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://developec.gr/privacy?lang=en" />
