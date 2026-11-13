@@ -116,6 +116,11 @@
         "name": "Βάσω Φωτοπούλου",
         "role": "Δομοστατικός Μηχανικός",
         "photo": "/media/team/vaso.webp"
+      },
+      {
+        "name": "Ιωάννης Αλεξόπουλος",
+        "role": "Πολιτικός Μηχανικός",
+        "photo": "/media/team/ioannis.webp"
       }
     ]
   },
