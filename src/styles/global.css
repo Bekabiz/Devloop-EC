@@ -1057,7 +1057,7 @@ button {
   gap: clamp(24px, 2.5vw, 48px);
 }
 .team__member {
-  flex: 0 1 200px;
+  flex: 0 1 300px;
   min-width: 205px;
 }
 .team__member-media {
