@@ -13,7 +13,7 @@
 
 - Georgios Adamopoulos — founder. MSc Structural Civil Engineer, National Technical University of Athens (NTUA). Master's in Local Development and Regional Administration, University of Piraeus.
 - The practice is multidisciplinary: engineers, architects, surveyors, site supervisors, and construction crews. Always speak as "we" / "our team".
-- Konstantina (GR: Κωνσταντίνα), Georgia (GR: Γεωργία) and Ioannis Alexopoulos (GR: Ιωάννης Αλεξόπουλος) are civil engineers of the practice. Vaso Fotopoulou (GR: Βάσω Φωτοπούλου) is a structural engineer of the practice.
+- Konstantina Boulouta (GR: Κωνσταντίνα Μπουλούτα), Georgia Zaxaropoulou (GR: Γεωργία Ζαχαροπούλου) and Ioannis Alexopoulos (GR: Ιωάννης Αλεξόπουλος) are civil engineers of the practice. Vasiliki Fotopoulou (GR: Βασιλική Φωτοπούλου) is a structural engineer of the practice. Elina Ntogou (GR: Ελίνα Ντόγου) is an architect engineer (M.Arch) of the practice.
 
 ## Services
 

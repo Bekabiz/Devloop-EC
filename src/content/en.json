@@ -103,17 +103,17 @@
     ],
     "members": [
       {
-        "name": "Konstantina",
+        "name": "Konstantina Boulouta",
         "role": "Civil Engineer",
         "photo": "/media/team/konstantina.webp"
       },
       {
-        "name": "Georgia",
+        "name": "Georgia Zaxaropoulou",
         "role": "Civil Engineer",
         "photo": "/media/team/georgia.webp"
       },
       {
-        "name": "Vaso Fotopoulou",
+        "name": "Vasiliki Fotopoulou",
         "role": "Structural Engineer",
         "photo": "/media/team/vaso.webp"
       },
@@ -121,6 +121,11 @@
         "name": "Ioannis Alexopoulos",
         "role": "Civil Engineer",
         "photo": "/media/team/ioannis.webp"
+      },
+      {
+        "name": "Elina Ntogou",
+        "role": "Architect Engineer, M.Arch",
+        "photo": "/media/team/elina.webp"
       }
     ]
   },

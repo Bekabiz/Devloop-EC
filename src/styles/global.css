@@ -1051,10 +1051,14 @@ button {
   margin-top: clamp(56px, 9vh, 100px);
   border-top: 1px solid var(--line);
   padding-top: clamp(40px, 6vh, 64px);
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 300px));
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: clamp(24px, 3vw, 56px);
+  gap: clamp(24px, 2.5vw, 48px);
+}
+.team__member {
+  flex: 0 1 200px;
+  min-width: 205px;
 }
 .team__member-media {
   overflow: hidden;
@@ -1096,20 +1100,13 @@ button {
     max-width: 460px;
   }
 }
-@media (max-width: 1000px) {
-  .team__members {
-    grid-template-columns: repeat(2, minmax(0, 380px));
-  }
-}
 @media (max-width: 560px) {
   .team__members {
-    grid-template-columns: 1fr;
     gap: 40px;
   }
   .team__member {
+    flex: 1 1 100%;
     max-width: 380px;
-    margin: 0 auto;
-    width: 100%;
   }
 }
 

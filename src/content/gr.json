@@ -103,17 +103,17 @@
     ],
     "members": [
       {
-        "name": "Κωνσταντίνα",
+        "name": "Κωνσταντίνα Μπουλούτα",
         "role": "Πολιτικός Μηχανικός",
         "photo": "/media/team/konstantina.webp"
       },
       {
-        "name": "Γεωργία",
+        "name": "Γεωργία Ζαχαροπούλου",
         "role": "Πολιτικός Μηχανικός",
         "photo": "/media/team/georgia.webp"
       },
       {
-        "name": "Βάσω Φωτοπούλου",
+        "name": "Βασιλική Φωτοπούλου",
         "role": "Δομοστατικός Μηχανικός",
         "photo": "/media/team/vaso.webp"
       },
@@ -121,6 +121,11 @@
         "name": "Ιωάννης Αλεξόπουλος",
         "role": "Πολιτικός Μηχανικός",
         "photo": "/media/team/ioannis.webp"
+      },
+      {
+        "name": "Ελίνα Ντόγου",
+        "role": "Αρχιτέκτων Μηχανικός, M.Arch",
+        "photo": "/media/team/elina.webp"
       }
     ]
   },
